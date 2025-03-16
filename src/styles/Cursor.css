@@ -1,0 +1,29 @@
+.cursor-small {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.05s linear;
+    z-index: 1000;
+}
+
+/* Big cursor that follows the small cursor */
+.cursor-big {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0); /* Hollow effect */
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+    transition: transform 0.1s ease-out;
+}

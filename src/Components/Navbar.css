@@ -1,0 +1,134 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 20px 10%;
+    background-color: rgba(18, 2, 47, 1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar when scrolled (White Background) */
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100%;
+    width: auto;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Change text color when navbar is scrolled */
+.scrolled-text {
+    color: #0b0223 !important;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+    color: white; /* Default menu color */
+}
+
+/* Change menu text color when scrolled */
+.navbar.scrolled .nav-links {
+    color: #0b0223;
+}
+
+/* Ensure menu items are visible */
+.navbar.scrolled .nav-item {
+    color: #0b0223 !important;
+}
+
+/* Hover effect */
+.nav-item {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #4b7bff;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Change hamburger color when scrolled */
+.navbar.scrolled .hamburger {
+    color: #0b0223;
+}
+
+/* Mobile Menu */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #0b0223; /* Default dark background */
+        text-align: center;
+        padding: 15px 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Ensure mobile menu is visible when navbar is scrolled */
+    .navbar.scrolled .nav-links {
+        background-color: white;
+    }
+
+    .navbar.scrolled .nav-item {
+        color: #0b0223 !important;
+    }
+
+    .nav-item {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+}
