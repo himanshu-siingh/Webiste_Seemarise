@@ -1,0 +1,159 @@
+.erp-contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .erp-text-content {
+    width: 45%;
+  }
+  
+  .erp-image-content {
+    width: 50%;
+    position: relative;
+    height: 400px; /* Added fixed height for positioning */
+  }
+  
+  .erp-heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .erp-highlight {
+    color: #8cc63f;
+  }
+  
+  .erp-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .erp-feature-list {
+    margin-bottom: 30px;
+  }
+  
+  .erp-feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .erp-feature-text {
+    font-size: 16px;
+  }
+  
+  .erp-check-icon {
+    background-color: #8cc63f;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  
+  .erp-contact-button {
+    background-color: #8cc63f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .erp-contact-button:hover {
+    background-color: #78b32a;
+    transition: background-color 0.3s ease;
+  }
+  
+  .erp-image-circle-1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .erp-image-circle-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    z-index: 1;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .erp-decoration-circle-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #8cc63f;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+    opacity: 0.7;
+  }
+  
+  .erp-decoration-circle-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8cc63f;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    z-index: 0;
+    opacity: 0.5;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .erp-contact-container {
+      flex-direction: column;
+    }
+    
+    .erp-text-content, .erp-image-content {
+      width: 100%;
+    }
+    
+    .erp-text-content {
+      margin-bottom: 40px;
+    }
+    
+    .erp-image-content {
+      height: 350px;
+    }
+    
+    .erp-image-circle-1 {
+      width: 200px;
+      height: 200px;
+      right: 10%;
+    }
+    
+    .erp-image-circle-2 {
+      width: 150px;
+      height: 150px;
+      left: 10%;
+    }
+  }

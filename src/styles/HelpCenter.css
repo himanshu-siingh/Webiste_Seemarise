@@ -1,0 +1,304 @@
+/* HelpCenter.css */
+/* All classes prefixed with 'hc-' to avoid conflicts with other page styles */
+
+.hc-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f9fa;
+}
+
+.hc-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======================== */
+/* Header Section with Parallax Effect */
+/* ======================== */
+.hc-header {
+    background: linear-gradient(to right, #213547aa, #2c4056aa), 
+                url('https://img.freepik.com/free-photo/business-agreement-handshake-hand-gesture_53876-130006.jpg?t=st=1742659330~exp=1742662930~hmac=5d18284e76df102f6150369ad15833a0dfec2c3263832a995c73a342c241fe7c&w=996');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    margin-top: 40px;
+    color: white;
+    padding: 60px 0 100px;
+    position: relative;
+}
+
+.hc-header-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hc-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hc-subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    opacity: 0.9;
+}
+/* ======================== */
+/* Search Box */
+/* ======================== */
+.hc-search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10; /* Ensure it's above the overlay */
+}
+
+.hc-search-input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.hc-search-input:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Overlay to enhance text readability */
+.hc-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    z-index: 0;
+}
+
+/* ======================== */
+/* Categories Section */
+/* ======================== */
+.hc-categories {
+    margin-top: -50px;
+    padding-bottom: 60px;
+}
+
+.hc-section-title {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-size: 1.8rem;
+    color: #213547;
+    font-weight: 600;
+}
+
+.hc-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hc-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hc-card-content {
+    padding: 20px;
+}
+
+.hc-card-title {
+    color: #213547;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.hc-card-description {
+    color: #717171;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.hc-card-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.hc-card-link:hover {
+    text-decoration: underline;
+}
+
+/* ======================== */
+/* FAQ Section */
+/* ======================== */
+.hc-faq-section {
+    padding: 60px 0;
+    background-color: #e1f0f5;
+}
+
+.hc-faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hc-faq-category {
+    margin-bottom: 40px;
+}
+
+.hc-category-title {
+    font-size: 1.5rem;
+    color: #213547;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4a90e2;
+}
+
+.hc-faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.hc-faq-question {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hc-faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.hc-faq-question::after {
+    content: '+';
+    font-size: 1.2rem;
+}
+
+.hc-faq-question.hc-active::after {
+    content: '-';
+}
+
+.hc-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+}
+
+.hc-faq-answer.hc-show {
+    max-height: 500px;
+    padding: 0 20px 15px;
+}
+
+/* ======================== */
+/* Popular Topics Section */
+/* ======================== */
+.hc-popular-topics {
+    padding: 60px 0;
+}
+
+.hc-topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.hc-topic-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.hc-topic-item:hover {
+    transform: translateY(-3px);
+}
+
+.hc-topic-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #213547;
+}
+
+.hc-topic-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hc-topic-list-item {
+    margin-bottom: 8px;
+}
+
+.hc-topic-link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.hc-topic-link:hover {
+    text-decoration: underline;
+}
+
+/* ======================== */
+/* Responsive Adjustments */
+/* ======================== */
+@media (max-width: 768px) {
+    .hc-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .hc-header {
+        padding: 40px 0 80px;
+    }
+    
+    .hc-title {
+        font-size: 2rem;
+    }
+    
+    .hc-topics-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hc-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hc-topics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hc-title {
+        font-size: 1.8rem;
+    }
+    
+    .hc-subtitle {
+        font-size: 1rem;
+    }
+}

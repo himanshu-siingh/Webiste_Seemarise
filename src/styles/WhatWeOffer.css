@@ -1,0 +1,242 @@
+/* WhatWeOffer.css */
+.offercontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 50px 15px;
+    margin-top: 0px;
+    font-family: 'Arial, sans-serif';
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-size: 42px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.subheading {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #777;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.productivity-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 0px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productivity-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Swipe Animation Effect */
+.productivity-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 216, 166, 0.2);
+    transition: left 0.4s ease-in-out;
+}
+
+.productivity-card:hover::before {
+    left: 0;
+}
+
+/* Icons */
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+/* Text Styling */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d8a6;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #00b48a;
+}
+
+/* Image Cards */
+.image-card {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.small-image-card {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    height: 300px;
+}
+
+/* Image Styling with Black Filter */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) contrast(1.1); /* Adds a darker effect */
+    opacity: 0.8; /* Adjust opacity to make image darker */
+}
+
+/* Alternative method - add a black overlay */
+.image-card::before,
+.small-image-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63 63 63 / 50%); /* Black filter overlay */
+    z-index: 1;
+}
+
+/* Overlay Effect */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    transition: transform 0.4s ease-in-out;
+    z-index: 2; /* Make sure this is above the black filter */
+}
+
+.image-card:hover .image-overlay {
+    transform: translateY(-10px);
+}
+
+/* Text Colors */
+.white-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.white-text {
+    color: #eee;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+/* Green Card */
+.green-card {
+    background-color: #00d8a6;
+    border-radius: 0px;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+
+.green-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+/* Video Button */
+.video-button {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.play-icon {
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .two-column-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .three-column-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .productivity-card {
+        text-align: center;
+    }
+}

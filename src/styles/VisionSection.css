@@ -1,0 +1,143 @@
+.coolcontainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 2rem;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  @media (min-width: 768px) {
+    .flex-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 1rem;
+  }
+  
+  .image {
+    width: 100%; 
+    height: auto;
+    max-height: 24rem;
+  }
+  
+  .cool-design-label {
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    margin-top: -40px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; 
+  }
+  
+  .vision-heading {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .features-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .features-grid {
+      grid-template-columns: 1fr 1fr; 
+      gap: 2rem; 
+    }
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .icon {
+    color: #2563eb;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .feature-title {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .feature-description {
+    color: #4b5563;
+  }
+  
+  @media (max-width: 767px) {
+    .vision-heading {
+      font-size: 28px;
+    }
+  
+    .title {
+      font-size: 1.75rem;
+    }
+  
+    .image-container {
+      margin-right: 0; 
+      margin-bottom: 1rem;
+    }
+  
+    .text-container {
+      margin-top: 0;
+    }
+  
+    .cool-design-label {
+      font-size: 1.1rem;
+      top: 5px; 
+      right: 1rem; 
+    }
+  }
+    

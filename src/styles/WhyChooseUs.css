@@ -1,0 +1,240 @@
+.why-choose-us-container {
+    width: 100%;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .why-choose-us-header {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  
+  .why-choose-us-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+    animation: fadeInDown 0.8s ease-out;
+  }
+  
+  .why-choose-us-divider {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 4px;
+    opacity: 0;
+    
+    transform: translateX(-20px);
+    transition: all 0.7s ease;
+  }
+  
+  .why-choose-us-divider.animate-slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .divider-segment {
+    height: 100%;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .teal {
+    background-color: #2bbbad;
+  }
+  
+  .blue-light {
+    background-color: #5d9cec;
+  }
+  
+  .blue {
+    background-color: #4285f4;
+  }
+  
+  .purple {
+    background-color: #aa66cc;
+  }
+  
+  .why-choose-us-main {
+    text-align: center;
+  }
+  
+  .why-choose-us-main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .why-choose-us-main-title.animate-fade-in {
+    opacity: 1;
+  }
+  
+  .why-choose-us-icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .icon-box {
+    width: 220px;
+    margin: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .icon-box.animate-pop-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .icon-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .icon-circle.animate-pulse {
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-box:hover .icon-title {
+    transform: translateY(-5px);
+  }
+  
+  .icon-box:nth-child(1) .icon-circle {
+    border-color: #2bbbad;
+  }
+  
+  .icon-box:nth-child(2) .icon-circle {
+    border-color: #5d9cec;
+  }
+  
+  .icon-box:nth-child(3) .icon-circle {
+    border-color: #4285f4;
+  }
+  
+  .icon-box:nth-child(4) .icon-circle {
+    border-color: #aa66cc;
+  }
+  
+  .icon-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box:nth-child(1) .icon-title {
+    color: #2bbbad;
+  }
+  
+  .icon-box:nth-child(2) .icon-title {
+    color: #5d9cec;
+  }
+  
+  .icon-box:nth-child(3) .icon-title {
+    color: #4285f4;
+  }
+  
+  .icon-box:nth-child(4) .icon-title {
+    color: #aa66cc;
+  }
+  
+  .icon-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-box:hover .icon-description {
+    opacity: 0.8;
+  }
+  
+  /* / Icons / */
+  .thumbs-up-icon {
+    font-size: 60px;
+    color: #2bbbad;
+    transition: transform 0.3s ease;
+  }
+  
+  .people-icon {
+    font-size: 60px;
+    color: #5d9cec;
+    transition: transform 0.3s ease;
+  }
+  
+  .target-icon {
+    font-size: 60px;
+    color: #4285f4;
+    transition: transform 0.3s ease;
+  }
+  
+  .heart-icon {
+    font-size: 60px;
+    color: #aa66cc;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box:hover .thumbs-up-icon,
+  .icon-box:hover .people-icon,
+  .icon-box:hover .target-icon,
+  .icon-box:hover .heart-icon {
+    transform: scale(1.1);
+  }
+  
+  /* / Animation Keyframes / */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* / Responsive styles / */
+  @media (max-width: 768px) {
+    .why-choose-us-icons-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .icon-box {
+      margin: 20px 0;
+    }
+  }
+  
+  
+  
+  
