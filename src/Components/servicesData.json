@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "title": "Flooring Business",
+      "slug": "flooring-business",
+      "description": "OUR CORE BUSINESS IS DISTRIBUTION OF TIMBER FLOOR, SPC FLOOR & COMPOSITE DECKING. WE ARE EXCLUSIVE DISTRIBUTOR OF RENOWNED ENGINEERED TIMBER FLOOR, PARQUETRY, SPC DECKING & ECOLUXLICA WPC DECKING. WE ALSO SUPPLY LAMINATE FLOOR, VINYL FLOOR, SOLIDWOOD FLOORING AND CARPETS.",
+      "image": "https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg",
+      "detailContent": {
+        "intro": "At our company, flooring is not just a product—it's our passion. With years of experience in the industry, we have established ourselves as leaders in the distribution and installation of high-quality flooring solutions.",
+        "sections": [
+          {
+            "title": "Our Exclusive Products",
+            "content": "We take pride in being the exclusive distributor for renowned flooring brands, offering premium engineered timber floors, parquetry, SPC decking, and eco-friendly WPC decking options. Our selection also includes laminate floors, vinyl floors, solid wood flooring, and carpets to suit every need and aesthetic preference."
+          },
+          {
+            "title": "Quality Assurance",
+            "content": "Every product in our inventory undergoes rigorous quality checks to ensure durability, aesthetic appeal, and performance. We source our materials from reputable manufacturers who share our commitment to excellence."
+          },
+          {
+            "title": "Customized Solutions",
+            "content": "We understand that every space is unique. Our team works closely with clients to recommend flooring solutions that align with their specific requirements, whether it's for residential homes, commercial spaces, or industrial facilities."
+          }
+        ],
+        "cta": "Contact us today for a consultation and discover the perfect flooring solution for your space."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Design & Build",
+      "slug": "design-build",
+      "description": "WITH IN HOUSE DESIGNER AND A CARPENTRY SET IN FABRICATION OF FURNITURE, WE UNDERTAKE INTERIOR AND EXTERIOR RENOVATION AND MAKE-OVER JOB.",
+      "image": "https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg",
+      "detailContent": {
+        "intro": "Our Design & Build service offers a comprehensive approach to renovation and construction projects, bringing together expert design and skilled craftsmanship under one roof.",
+        "sections": [
+          {
+            "title": "In-House Design Team",
+            "content": "Our talented designers work closely with clients to understand their vision and translate it into practical, beautiful designs. From concept to completion, our design team ensures that every aspect of your project reflects your personal style and meets your functional needs."
+          },
+          {
+            "title": "Custom Carpentry & Fabrication",
+            "content": "With our dedicated carpentry workshop, we create custom furniture and fixtures tailored to your specifications. Our skilled craftsmen combine traditional techniques with modern technology to produce high-quality pieces that enhance your space."
+          },
+          {
+            "title": "Complete Renovation Services",
+            "content": "Whether you're looking to update a single room or transform an entire property, our team handles both interior and exterior renovations with attention to detail and commitment to quality. From residential make-overs to commercial refurbishments, we deliver projects that exceed expectations."
+          }
+        ],
+        "cta": "Ready to transform your space? Contact our Design & Build team to schedule a consultation."
+      }
+    },
+    {
+      "id": 3,
+      "title": "Trading & PMP",
+      "slug": "trading-pmp",
+      "description": "WE ARE SOURCE LOCAL MANUFACTURED PRODUCTS AND SELL OVERSEA AND VICE VERSA. WE UNDERTAKE SITE MANAGEMENT & INSTALLATION WORKS FOR MANUFACTURERS OR PROJECT BULK SUPPLIES.",
+      "image": "https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg",
+      "detailContent": {
+        "intro": "Our Trading & Project Management Professional (PMP) services connect manufacturers with markets, facilitating the global exchange of quality products while ensuring expert installation and site management.",
+        "sections": [
+          {
+            "title": "Global Trading Network",
+            "content": "We serve as a bridge between local manufacturers and international markets, as well as bringing overseas products to local clients. Our extensive network and market knowledge enable us to source the best products and create valuable connections between suppliers and buyers."
+          },
+          {
+            "title": "Project Management Excellence",
+            "content": "Our PMP-certified team manages complex projects from inception to completion. We coordinate all aspects of site management, ensuring that projects are delivered on time, within budget, and to the highest standards of quality."
+          },
+          {
+            "title": "Professional Installation Services",
+            "content": "We provide specialized installation services for manufacturers and bulk project supplies. Our experienced installation teams are trained to handle various product types, ensuring proper installation that maximizes product performance and longevity."
+          }
+        ],
+        "cta": "Looking for reliable trading partners or project management professionals? Contact our Trading & PMP team today."
+      }
+    }
+  ]
