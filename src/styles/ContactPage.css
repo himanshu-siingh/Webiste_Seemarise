@@ -20,7 +20,6 @@
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.705)),
               url('https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1742831857~exp=1742835457~hmac=c14a56dccedd6d033423c25da660a388b1949264adaf507561c776ac7309548d&w=740') no-repeat center;
-  background-size: fit;
   height: 400px;
   display: flex;
   background-position: top;
@@ -61,7 +60,7 @@
 }
 
 h2 {
-  font-size: 80px;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
@@ -251,10 +250,11 @@ textarea {
   width: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
   }
+  
   .form-section {
     padding-right: 0;
     border-right: none;
@@ -270,5 +270,10 @@ textarea {
   .newsletter-form input {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500) {
+  .hero {
+    height: 200px;
   }
 }
